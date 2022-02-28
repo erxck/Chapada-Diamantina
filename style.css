@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* A cada 1rem equivale a 10px */
+    font-size: 62.5%;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 6.0rem;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 3.0rem;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+}
+
+.nav-bar li {
+    float: left;
+}
+
+.nav-bar li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-bar #logo {
+    font-size: 2.5rem;
+    padding: 10px 28px;
+}
+
+.nav-bar .links-right {
+    display: flex;
+    float: right;
+    font-size: 1.4rem;
+    margin-right: 20px;
+}
+
+.nav-bar .links-right li a {
+    padding: 18px 35px;
+}
+
+.nav-bar .links-right a:hover:not(#contact) {
+    color: #FF4500;
+}
+
+.header {
+    background-image: url(imagens/chapada_diamandina4.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+} 
+
+.header .section-meio .titles {
+    color: #fff;
+    padding-top: 340px;
+    text-align: center;
+}
+
+.header .section-meio .linha {
+    display: inline-block;
+    border-bottom: 4px solid #FF4500;
+    width: 125px;
+}
+
+.subtitle {
+    text-align: center;  
+    margin-top: 90px;
+}
+
+.subtitle .linha-two {
+    display: inline-block;
+    border-bottom: 3px solid #FF4500;
+    width: 250px;
+}
+
+.passeios .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    grid-gap: 50px 0px;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.text-about {
+    text-align: center;
+    margin: 90px 0px;
+}
+
+.text-about .copyright-about {
+    font-size: 1.3rem;
+}
+
+.text-about .copyright-about a {
+    text-decoration: none;
+}
+
+.text-about .copyright-about a:hover {
+    color: blue;
+}
+
+.top {
+    text-align: right;
+    margin: 25px 5px;
+    font-size: 1.4rem;
+}
+
+.top #top-frase {
+    margin-right: 5px;
+}
+
+.top #seta-top a {
+    background-color: rgba(128, 128, 128, 0.7);
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 12px 17px;
+}
+
+.top #seta-top a:hover {
+    background-color: #FF4500;
+    color: #fff;
+}
+
+.linha-three {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 25px;
+}
+
+.footer-copyright a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-copyright a:hover {
+    color: blue;
+}
+
+#image {
+    width: 90%;
+}
+
+#subtitle-passeios {
+    margin: 10px;
+}
+
+#paragrafo-passeios {
+    display: inline-block;
+    color: #666;
+    text-align: left;
+    line-height: 2.3rem;
+    margin: 10px;
+    width: 90%;
+}
+
+#paragrafo-about {
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #666;
+    text-align: left;
+    line-height: 2.3rem;
+    width: 90%;
+    max-width: 1150px;
+}
+
+@media (max-width: 768px) {
+   html {
+       font-size: 50%;
+   }
+
+   .passeios .row {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   }
+
+   .section-meio {
+       background-position: 50%;
+   }
+
+   #image {
+       width: 90%;
+   }
+
+   #paragrafo-passeios {
+       font-size: 1.7rem;
+       width: 90%;
+    }
+    
+    #paragrafo-about {
+       width: 90%;
+   }
+}
+
+@media (max-width: 425px) {
+    .section-meio {
+        background-position: 65%;
+    }
+}
+
+@media (max-width: 530px) {
+    .nav-bar .links-right {
+        display: none;
+    }
+    
+    .one, .two, .three {
+        background-color: #FF4500;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+    
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        float: right;
+        margin: 8px 20px;
+    }
+    
+    /* FullScreen
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #000;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on .nav-bar .links-right {
+        display: block;
+    } */
+    
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 0;
+        top: 8px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on .links-right ul {
+        display: block;
+        text-align: center;
+    }
+    
+    .menu-section.on .links-right ul a {
+        display: block;
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
