@@ -64,6 +64,7 @@ h2 {
 
 .nav-bar .links-right a:hover:not(#contact) {
     color: #FF4500;
+    border-bottom: 2px solid #FF4500;
 }
 
 .header {
@@ -218,12 +219,6 @@ h2 {
    }
 }
 
-@media (max-width: 425px) {
-    .section-meio {
-        background-position: 65%;
-    }
-}
-
 @media (max-width: 530px) {
     .nav-bar .links-right {
         display: none;
@@ -290,5 +285,11 @@ h2 {
         transition-duration: 0.5s;
         font-size: 3rem;
         line-height: 4rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .section-meio {
+        background-position: 65%;
     }
 }
