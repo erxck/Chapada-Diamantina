@@ -290,7 +290,7 @@ h2 {
 }
 
 @media (max-width: 425px) {
-    .section-meio {
-        background-position: 65%;
+    .header {
+        background-position: 33%;
     }
 }
