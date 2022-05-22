@@ -202,7 +202,7 @@ h2 {
        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
    }
 
-   .section-meio {
+   .header {
        background-position: 50%;
    }
 
